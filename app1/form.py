@@ -1,15 +1,20 @@
 from pyexpat import model
 from django import forms
 
-from app1.models import department,user_model
+from app1.models import Department,User_model,Ticket_model
 
 
-class departmentform(forms.modelsForm):
+class Departmentform(forms.modelsForm):
     class Meta:
-        model=department
+        model=Department
         fields='__all__'
 
-class user_modelform(forms.modelsForm):
+class User_modelform(forms.modelsForm):
     class Meta:
-        model=user_model
+        model=User_model
+        fields='__all__'
+
+class Ticket_modelform(forms.modelsForm):
+    class Meta:
+        model=Ticket_model
         fields='__all__'
